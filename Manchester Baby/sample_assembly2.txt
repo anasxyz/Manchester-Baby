@@ -1,0 +1,11 @@
+; SIMPLE SUBTRACTION PROGRAM
+; 17 - 5 = 12
+          VAR 0        ; Declare 32-bit variable to fill space
+START:    LDN NUM1     ; Load NUM1 into the accumulator (negated)
+          SUB NUM2     ; Subtract NUM2 from the accumulator
+          STO RESULT   ; Store the result in RESULT
+          STP          ; Stop processor
+; Variable declarations follow
+NUM1:     VAR -17      ; Declare 32-bit variable
+NUM2:     VAR 5        ; Declare 32-bit variable with a negative value
+RESULT:   VAR 0        ; Declare 32-bit variable for the final result
